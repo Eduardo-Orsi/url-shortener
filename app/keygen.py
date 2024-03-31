@@ -1,6 +1,7 @@
 import secrets
 import string
 
+
 class Keygen:
 
     @classmethod
