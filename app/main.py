@@ -6,7 +6,7 @@ from .schemas import URLBase, URLInfo
 from .controller import URLController
 from .database import Base, engine, get_db
 
-app = FastAPI()
+app = FastAPI(title="URL Shortener")
 Base.metadata.create_all(bind=engine)
 
 @app.post("/create", response_model=URLInfo)
